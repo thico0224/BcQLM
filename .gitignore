@@ -34,6 +34,8 @@ Thumbs.db
 # Data / Datasets
 # ------------------------
 data/
+!data/*.py
+
 *.csv
 *.tsv
 *.jsonl
