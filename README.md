@@ -5,5 +5,5 @@ As multimodal large language models (MLLMs) advance, their large-scale architect
 
 ##  Model Overview
 <p align="center">
-  <img src="overall.png" alt="Framework of BcQLM" width="1200"/>
+  <img src="overall.png" alt="Framework of BcQLM" width="1000"/>
 </p>
