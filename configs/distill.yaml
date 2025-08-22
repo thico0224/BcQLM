@@ -1,0 +1,29 @@
+# Data
+image_folder: ./data/images          # 放图像的文件夹
+text_folder: ./data/texts            # 放文本的文件夹
+
+# Teacher model (HuggingFace hub, e.g. "openai/clip-vit-base-patch32")
+teacher_name: <teacher_model_name>
+
+# Student model backbones
+vision_backbone: <vision_backbone_name>
+text_backbone: <text_backbone_name>
+vision_embed_dim: <vision_dim>
+text_embed_dim: <text_dim>
+proj_embed_dim: <proj_dim>
+
+# Training
+saved_model_dir: ./checkpoints/distill_breezeclip
+resume: ""
+num_epochs: 50
+batch_size: 64
+lr: 1e-4
+temperature: 0.07
+alpha: 1.0          # 对比学习 loss 权重
+beta: 1.0           # 蒸馏 loss 权重
+train_ratio: 0.8
+max_text_length: 77
+device: cuda
+num_workers: 4
+seed: 42
+save_every: 1

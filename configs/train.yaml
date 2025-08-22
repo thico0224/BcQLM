@@ -1,0 +1,23 @@
+# Data
+json_files:
+  - ./data/train_qa.json
+image_folder: ./data/images
+
+# Pretrained / distilled models
+breezeclip_ckpt: ./checkpoints/distill_breezeclip/breezeclip_best.pth
+llama_model_path: <llama_model_name>   # e.g. "meta-llama/Llama-2-7b-hf"
+
+# Save
+save_dir: ./checkpoints/bcqlm
+
+# Training
+num_epochs: 10
+batch_size: 16
+lr: 1e-5
+llama_embedding_dim: <llama_embed_dim>
+proj_dim: <proj_dim>
+max_grad_norm: 1.0
+target_unfreeze_ratio: 0.05
+device: cuda
+num_workers: 4
+max_length: 128

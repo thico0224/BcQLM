@@ -1,0 +1,22 @@
+# Core
+torch>=2.0
+torchvision
+timm
+numpy
+pillow
+pyyaml
+
+# Transformers & NLP
+transformers>=4.38
+datasets
+evaluate
+bert-score
+rouge-score
+
+# Utilities
+scipy
+tqdm
+
+# Optional: if you use Jupyter/Colab
+ipython
+jupyter

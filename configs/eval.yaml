@@ -1,0 +1,17 @@
+# Data
+eval_json_path: ./data/val_qa.json
+image_folder: ./data/images
+
+# Model checkpoints
+save_dir: ./checkpoints/bcqlm/checkpoint_epoch_9
+llama_dir: <llama_model_name>          # e.g. "meta-llama/Llama-2-7b-hf"
+breezeclip_path: ./checkpoints/distill_breezeclip/breezeclip_best.pth
+adapter_path: ./checkpoints/bcqlm/checkpoint_epoch_9/visual_adapter.pth
+dynamic_attn_path: ./checkpoints/bcqlm/checkpoint_epoch_9/dynamic_attn.pth
+
+# Eval
+batch_size: 16
+llama_embedding_dim: <llama_embed_dim>
+proj_dim: <proj_dim>
+device: cuda
+max_length: 128
