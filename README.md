@@ -7,3 +7,19 @@ As multimodal large language models (MLLMs) advance, their large-scale architect
 <p align="center">
   <img src="overall.png" alt="Framework of BcQLM" width="1000"/>
 </p>
+
+
+## Citation
+
+If you find our work useful, please consider citing:
+
+```bibtex
+@misc{xiang2025bcqlm,
+  title={BcQLM: Efficient Vision-Language Understanding with Distilled Q-Gated Cross-Modal Fusion},
+  author={Xiang, Sike and Chen, Shuang and Atapour-Abarghouei, Amir},
+  year={2025},
+  eprint={2509.08715},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2509.08715}
+}
